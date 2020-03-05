@@ -1,0 +1,18 @@
+DETAILS
+- open chimera
+- file > open (choose molecule)
+- select > residue (select residue to delete, this highlights it in the structure) 
+- actions > atoms and bonds > delete (this deletes highlited residue)
+- repeat this to delete all unwanted molecule and water too
+- file > save pdb
+- close chimera
+
+- open autodock tools
+- file > read molecule (select the molecule)
+- edit > hydrogens > add 
+- in the dialog box select "polar only", click ok
+- edit > charges > add kollman charges
+- grid > macromolecules > choose
+- select the molecule
+- choose a location to save the pdbqt file 
+- all done

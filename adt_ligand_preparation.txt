@@ -1,0 +1,12 @@
+DETAILS
+
+- open autodocktools
+- ligand > input > open
+- choose the ligand
+- edit > charges > compute gastegier
+- ligand > torsion tree > choose torsions
+- click "make all active bonds non-rotatable" (Number of rotatable bonds will now = 0)
+- click "make all rotatable bonds rotatable" (Number of ratatable bonds may now be > 0)
+- click "done"
+- ligand > output > save pdbqt
+- then choose a location to save

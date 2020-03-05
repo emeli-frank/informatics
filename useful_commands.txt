@@ -1,0 +1,32 @@
+OPEN BABEL
+	Minimize a ligand
+		[obminimize file.mol2]
+		# note: this creates output in command window
+		
+		[obminimize file.sdf > file.sdf] (not working)
+		# note: this saves the file with minimized energy in a file designated by the string before the ">" sign
+		        not working
+		
+		[obminimize -o sdf foo.sdf > out.sdf] (working)
+		# note: Use the -o parameter to specify the output file format and redirect the output to write the output file.
+			    this saves the file with minimized energy in a file designated by the string after the ">" sign
+		
+	Convert all smi files in a directory to mol2 files 
+		# This is for batch operations
+		
+		[obabel *.smi -omol2 -m] (generates funny looking compound)
+		# note: "-m" paramter tells it to save it in multiple files
+		
+		[obabel *.smi -omol2 -m --gen3d] (working)
+		[obabel *.smi -opdb -m --gen3d] (converting to pdb)
+		# note: the "--gen3d" option causses openbabel to build coordinates, atoms of the compound is linked with bonds
+			    might take more time to generate molecule
+				
+	Calculate total energy
+		[obenergy [options] file.ext]
+		# just type only obenergy to learn more about options
+		
+		
+	Convert from smi to mol2
+		[obabel -ismi -omol2]
+		# note: haven't tested
