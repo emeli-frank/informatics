@@ -22,6 +22,9 @@ OPEN BABEL
 		# note: the "--gen3d" option causses openbabel to build coordinates, atoms of the compound is linked with bonds
 			    might take more time to generate molecule
 				
+	Convert sdf to mol 2
+		obabel -i sdf ligand.sdf -o mol2 -O ligand.min.mol2 [working]
+				
 	Calculate total energy
 		[obenergy [options] file.ext]
 		# just type only obenergy to learn more about options
