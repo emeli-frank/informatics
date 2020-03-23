@@ -33,3 +33,9 @@ OPEN BABEL
 	Convert from smi to mol2
 		[obabel -ismi -omol2]
 		# note: haven't tested
+		
+
+VINA	
+	Split combined poses generated after docking 
+		vina_split --input <filename>
+		eg. vina_split --input out.pdbqt
